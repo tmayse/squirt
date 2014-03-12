@@ -12,7 +12,7 @@ title: Install Squirt Mobile
 - Open this page on your phone
 - Select and copy the JavaScript below to your clipboard:
 
-<pre class="bookmarklet"></pre>
+<pre class="bookmarklet">javascript:(function(){if(window.sq){window.sq.closed&&window.document.dispatchEvent(new Event('squirt.again'));}else{window.sq={};window.sq.userId='586ed654-2804-4302-95e3-1185899b73a7';s=document.createElement('script');s.src='http://www.squirt.io/bm/squirt.js';s.s=window.location.search;s.idx=s.s.indexOf('sq-dev');if(s.idx!=-1){s.ampIdx=s.s.indexOf('&');s.host=s.s.substring(s.idx+7,s.ampIdx==-1?s.s.length:s.ampIdx);s.src='http://'+(s.host?s.host:'localhost')+':4000/bm/squirt.js';}document.body.appendChild(s);}})();</pre>
 
 - Bookmark the current page
 - Open your bookmarks manager
